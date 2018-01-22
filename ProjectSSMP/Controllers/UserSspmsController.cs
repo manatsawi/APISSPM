@@ -44,6 +44,7 @@ namespace ProjectSSMP.Controllers
         {
             var UserMapMenu = await _context.MenuAuthentication.SingleOrDefaultAsync(m => m.GroupId == gid);
             return Json(new { UserMapMenu });
+            //ddd
         }
 
         public async Task<JsonResult> GetMenu(string mid)
